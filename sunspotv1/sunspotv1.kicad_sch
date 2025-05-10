@@ -4728,6 +4728,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Resistor on XOUT on rp2040 why?"
+		(exclude_from_sim no)
+		(at 54.61 160.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "00a12eb3-b5fa-4b1f-9730-3ef75e501a74")
+	)
 	(text "Hirose_FH12-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal\n"
 		(exclude_from_sim no)
 		(at 378.46 165.1 0)
@@ -5432,16 +5442,6 @@
 	)
 	(wire
 		(pts
-			(xy 308.61 85.09) (xy 313.69 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c309eef-9aae-45ed-9ff5-1e09376897ca")
-	)
-	(wire
-		(pts
 			(xy 93.98 54.61) (xy 102.87 54.61)
 		)
 		(stroke
@@ -5992,6 +5992,16 @@
 	)
 	(wire
 		(pts
+			(xy 302.26 85.09) (xy 313.69 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7be3ff75-e1d6-4ec7-9062-b9637009e65a")
+	)
+	(wire
+		(pts
 			(xy 201.93 279.4) (xy 205.74 279.4)
 		)
 		(stroke
@@ -6069,6 +6079,16 @@
 			(type default)
 		)
 		(uuid "8722e0e5-dc62-4814-8ae0-49a4d867439a")
+	)
+	(wire
+		(pts
+			(xy 217.17 186.69) (xy 224.79 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87de2c05-6575-4e56-adce-9e6611574ae6")
 	)
 	(wire
 		(pts
@@ -6172,6 +6192,16 @@
 	)
 	(wire
 		(pts
+			(xy 207.01 186.69) (xy 214.63 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97a36e43-6318-499a-9493-f7a1728d6f06")
+	)
+	(wire
+		(pts
 			(xy 213.36 276.86) (xy 219.71 276.86)
 		)
 		(stroke
@@ -6269,6 +6299,16 @@
 			(type default)
 		)
 		(uuid "9ed78257-a031-402f-b88f-42b6a44b7617")
+	)
+	(wire
+		(pts
+			(xy 292.1 85.09) (xy 299.72 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f95a777-b7b5-42f5-ad17-138f28725a6e")
 	)
 	(wire
 		(pts
@@ -11566,6 +11606,42 @@
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAE0AAAAvAAAAdAAAAEUAAAAxAAAAYgAAADUAAABiAAAAbwAAADIAAAAxAAAAZAAAAGYAAABU"
+			"AAAAbAAAAFMAAABJAAAAcwAAAGIAAABSAAAAOQAAAHYAAABYAAAAMQAAAFcAAABmAAAAVgAAAG4A"
+			"AABjAAAAOQAAAHMAAABMAAAAZwAAAHUAAABBAAAAWQAAAGIAAAAyAAAAOQAAAHYAAABlAAAAdgAA"
+			"AFgAAABxAAAAeAAAAFoAAABZAAAAdAAAAFcAAAB6AAAAQQAAAFkAAABEAAAAQQAAAEIAAABLAAAA"
+			"VgAAAG8AAAB2AAAAagAAAHgAAAA0AAAAOAAAAEQAAABsAAAAWgAAACsAAAByAAAAUAAAAFQAAAAw"
+			"AAAAOQAAAGkAAABZAAAAaQAAAEkAAABZAAAATgAAAEsAAABrAAAAUwAAAFkAAAB3AAAAYQAAAE4A"
+			"AABZAAAAbwAAADEAAABhAAAAOQAAAGIAAAB3AAAAeQAAAGkAAAB1AAAAdgAAAHQAAABPAAAAYgAA"
+			"AFEAAABCAAAAVQAAAEUAAABRAAAAQgAAAEUAAABFAAAAUQAAAEgAAABHAAAAYQAAAHoAAAAyAAAA"
+			"UwAAAGcAAAB0AAAATAAAAFMAAABVAAAAcgAAAEsAAAA0AAAAdAAAAFYAAABxAAAAMQAAAGEAAAB4"
+			"AAAAWgAAAHMAAAAwAAAAYQAAAEQAAABoAAAAOAAAACsAAABqAAAASgAAAHUAAABiAAAARwAAADMA"
+			"AAA1AAAAKwAAAGYAAABwAAAAaAAAAE0AAABKAAAAcwAAAHIAAABLAAAAeQAAAGwAAABpAAAANgAA"
+			"AGQAAABDAAAAbAAAAHUAAABiAAAAbQAAADcAAABNAAAAbgAAAHoAAAA5AAAAZgAAAHEAAABVAAAA"
+			"cwAAAE8AAABsAAAAWgAAAE0AAABvAAAATwAAADMAAABiAAAAcwAAADQAAABMAAAAWAAAAFgAAABY"
+			"AAAAdQAAAFAAAABBAAAAZwAAAFEAAABOAAAAbwAAAHQAAABWAAAAcgAAADgAAAAvAAAAUAAAAHoA"
+			"AABRAAAAYQAAAEQAAABTAAAAWQAAAHoAAABXAAAAYgAAAFcAAAByAAAAMQAAADkAAABQAAAAUgAA"
+			"AFUAAABWAAAARgAAAG4AAABmAAAAdQAAADIAAABaAAAANgAAAHMAAABvAAAATAAAAGkAAAA3AAAA"
+			"RwAAAFkAAABEAAAAQQAAAG8AAAB3AAAAUQAAAHgAAABWAAAAVwAAAGEAAAAxAAAAVwAAAGkAAABv"
+			"AAAAdQAAAEwAAABVAAAAYQAAAHYAAABWAAAARwAAAEkAAAAzAAAARwAAAGEAAAB2AAAAYwAAAFoA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AA=="
 		)
 	)
@@ -12936,7 +13012,43 @@
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGhRVkZiRi8vMzR5TXpPMTh3Z2hSSTFG"
+			"U2pxZGpxaW9LTUFxQUYyK2ZEbFRwa3pSdGdzaEhOclZYOXBtcktyV1kyb2JuY0xDUWhvM2JzekRE"
+			"ejlNUUVDQXc1eE9uVG94YU5BZzB0UFRPWHYyTEFjT0hDQXlNcktTQTBmdjNyMFpNV0tFMWpMbFNu"
+			"VHQycFh3OEhDU2s1TTVkT2dRaVltSm1qQWlQVDJkRXlkT2tKV1Z4ZENoUTJuVnFwVTJMem82V3N2"
+			"Tm5tYk5taEVWRllWZXJ5Yy9QOS9wN2xrR1ZmZWdpUmFFelpSQ3FBSUdtL0JCVkFnc0ttUVNWam1F"
+			"UTlJVms2blNSVUpyVTJJYkI5ajZsVmpIVm5RWnNXMVN0SDJvNGd0dGQ3WlZyQW9DSWV3dXJtdkNF"
+			"ZHYrdGNlbklHN0NOZmcvbzMyMStxWUtEQXpVM2p4WFd4RHAyclVyUTRZTTRkZGZmeVVwS2VsNnBD"
+			"bVIxSG5hdDIvUG5EbHptRHg1TWkrLy9ESVJFUkZrWkdUdzNudnZZVGFiZWV1dHR3Z05EYjJsVjc3"
+			"L21YQ0dNRUtkZjcyRURkZEtYUk5ZWEJyald1TFZsZWZXbnJxWWs3TnhaaXNWWitRaVB6OGxFb2xF"
+			"SXBIY3lyUnQyNWJubjMrZWtwSVN6cDQ5eTRzdnZzaVlNV013R28zVnpsSDdQMWUzNkNjeE1aSFBQ"
+			"dnVNYnQyNlZWbm9rRWdrbDZlNHVKaTB0RFMyYjkvT0YxOTh3ZSsvLzQ1T3A2TkxseTUwNzk0ZHNO"
+			"clNyMWl4Z3JWcjF4SVNFc0svL3ZVdkprMmFwTDNuSG56d1FjeG1NODg5OXh4SGp4NWw0OGFOakIw"
+			"N2x0VFVWTEt5c2dnSkNlR2VlKzdoamp2dVFBaEJSRVFFYjd6eEJxKysrbXFOQ2k4bWs0bTB0RFF5"
+			"TWpMdzlmVmw1TWlSOU9uVEI1MU9oNGVIQjVNblQyYml4SWtZalVaME9oMzkrL2NuSXlORDYya2VH"
+			"Um5KZ0FFRHRIZzZuVTViMFhyMjdGa0FaczJheFpRcFU3VFZ0bzg5OWhqaDRlRU1IejZjL1B4OC92"
+			"blBmN0puejU0cWU3Q2JUQ1krK2VRVHhvMGJweFZrcW1zWElMbStXQlE0WDJoMXNSQ0FqNXY4WHBC"
+			"Y083bTV1WnF6VHRPbVRkbTZkU3ZmZlBNTnYvNzZLOFhGeFFDMGFOR0NWMTU1aGVIRGgrUGo0NlBO"
+			"ZFhWMTVjMDMzeVF2TDQ5ZHUzWXhZOFlNMXE1ZHl6MzMzTVAyN2R2NTdiZmY2TldyMTJYYjJsK0pu"
+			"My8rbVlVTEYzTHExQ202ZHUzS1AvN3hEenAxNnFSZFd5bwCwMW5sAQAAAOAxbmwBAAAAEDJubAEA"
+			"AABAMm5sAQAAAHAybmwBAAAAoDJubAEAAADQMm5sAQAAAAAzbmwBAAAAMDNubAEAAABgM25sAQAA"
+			"AJAzbmwBAAAAwDNubAEAAADwM25sAQAAACA0bmwBAAAAUDRubAEAAACANG5sAQAAALA0bmwBAAAA"
+			"4DRubAEAAAAQNW5sAQAAAEA1bmwBAAAAcDVubAEAAACgNW5sAQAAANA1bmwBAAAAADZubAEAAAAw"
+			"Nm5sAQAAAGA2bmwBAAAAkDZubAEAAADANm5sAQAAAPA2bmwBAAAAIDdubAEAAABQN25sAQAAAIA3"
+			"bmwBAAAAsDdubAEAAADgN25sAQAAABA4bmwBAAAAQDhubAEAAABwOG5sAQAAAKA4bmwBAAAA0Dhu"
+			"bAEAAAAAOW5sAQAAADA5bmwBAAAAYDlubAEAAACQOW5sAQAAAMA5bmwBAAAA8DlubAEAAAAgOm5s"
+			"AQAAAFA6bmwBAAAAgDpubAEAAACwOm5sAQAAAOA6bmwBAAAAEDtubAEAAABAO25sAQAAAHA7bmwB"
+			"AAAAoDtubAEAAADQO25sAQAAAAA8bmwBAAAAMDxubAEAAABgPG5sAQAAAJA8bmwBAAAAwDxubAEA"
+			"AADwPG5sAQAAACA9bmwBAAAAUD1ubAEAAACAPW5sAQAAALA9bmwBAAAA4D1ubAEAAAAQPm5sAQAA"
+			"AEA+bmwBAAAAcD5ubAEAAACgPm5sAQAAANA+bmwBAAAAAD9ubAEAAAAwP25sAQAAAGA/bmwBAAAA"
+			"kD9ubAEAAADAP25sAQAAADBAbmwBAAAAYEBubAEAAACQQG5sAQAAAMBAbmwBAAAA8EBubAEAAAAg"
+			"QW5sAQAAAFBBbmwBAAAAgEFubAEAAACwQW5sAQAAAOBBbmwBAAAAEEJubAEAAABAQm5sAQAAAHBC"
+			"bmwBAAAAoEJubAEAAADQQm5sAQAAAABDbmwBAAAAMENubAEAAABgQ25sAQAAAJBDbmwBAAAAwENu"
+			"bAEAAADwQ25sAQAAACBEbmwBAAAAUERubAEAAACARG5sAQAAALBEbmwBAAAA4ERubAEAAAAQRW5s"
+			"AQAAAEBFbmwBAAAAcEVubAEAAACgRW5sAQAAANBFbmwBAAAAAEZubAEAAAAwRm5sAQAAAGBGbmwB"
+			"AAAAkEZubAEAAADARm5sAQAAAPBGbmwBAAAAIEdubAEAAABQR25sAQAAAIBHbmwBAAAAsEdubAEA"
+			"AADgR25sAQAAABBIbmwBAAAAQEhubAEAAABwSG5sAQAAAKBIbmwBAAAA0EhubAEAAAAASW5sAQAA"
+			"ADBJbmwBAAAAYElubAEAAACQSW5sAQAAAMBJbmwBAAAA8A=="
 		)
 	)
 	(image
@@ -21772,7 +21884,43 @@
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//////////"
+			"////////////////////////////////////////////////////////////////////////////"
+			"////////////////////////////////////////////////////////////////////////////"
+			"////////////////////////////////////////////////////////////////////////////"
+			"////////////////////////////////////////////////////////////////////////////"
+			"////////////////////////////////////////////////////////////////////////////"
+			"////////////////////////////////////////////////////////////////////////////"
+			"////////////////////////////////////////////////////////////////////////////"
+			"////////////////////////////////////////////////////////////////////////////"
+			"////////////////////////////////////////////////////////////////////////////"
+			"////////////////////////////////////////////////////////////////////////////"
+			"////////////////////////////////////////////////////////////////////////////"
+			"////////////////////////////////////////////////////////////////////////////"
+			"////////////////////////////////////////////////////////////////////////////"
+			"////////////////////////////////////////////////////////////////////////////"
+			"////////////////////////////////////////////////////////////////////////////"
+			"////////////////////////////////////////////////////////////////////////////"
+			"////////////////////////////////////////////////////////////////////////////"
+			"////////////////////////////////////////////////////////////////////////xcX/"
+			"/3Fx//8eHv8AAAD/Vlb//6mp///9/f////v7//+oqP//VVX//wEB//8AAP//AAD/AAAA/wAAAP8A"
+			"AAD/AAD//zU1//+Jif//3Nz/////////xcX//3Fx//8eHv8AAAD/AAAA/wAAAP8AAAD/ABIA/wBg"
+			"AP8ArwD/AP0A/wD/AP8A/wD/AP8A/wD/AP9P/0//ov+i//X/9f//////q6v//1hY//8FBf//AAAA"
+			"/1b/Vv+p/6n//f/9//f/9/+k/6T/Uf9R/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/"
+			"AP8A/zD/MP+D/4P/1//X///////K/8r/d/93/yP/I/8AAAD/AAAA//8AAP//AAD//wAA//8AAP//"
+			"AAD//wAA//8xMf//enr//8PD///////U1P//iooA/0BAGf8AZ2f/ALS0///////Kyv//fX3//zAw"
+			"//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAAD/Vv9W/6n/qf/9//3/9//3/6T/pP9R/1H/AP8A"
+			"/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/MP8w/4P/g//X/9f//////8r/yv93/3f/"
+			"I/8j/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/0kASf+cAJz/7wDv//8A//+x"
+			"ALH/XgBe/wsAC/8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP9WVv//qan///39"
+			"////9/f/AKSk/wBRUf8AAAD/AAAA/wAAAP8AAAD/AP8A/wD/AP8A/wD/AP8A/wD/AP8ArwD/AFwA"
+			"/wAJAP8AAAD/AAAA/wAAAP9WAAD/qQAA//0AAP//AAD//wAA/wAAAP8AAAD/AAAA/0lJAP+cnAD/"
+			"7+8A////AP+xsQD/Xl4A/wsLAP8AAAD/AAAA/wAAAP8A/wD/AP8A/wC/AP8AawD/ABgA/wAAAP8A"
+			"AAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/1YAVv+pAKn//QD9//sA+/+oAKj/VQBV/wEA"
+			"Af8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AExP/AF9f/wCtrf8A/Pz/AP///wCxsf8AYWH/ABER"
+			"/wAAAP8rACv/ewB7/8sAy///AP//3ADc/48Aj/9EAET/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/"
+			"AAAA/wAAAP8AAAD/AAAA/wAAAP8AdwD/ACUA/6MAAP9PAAD/AAAA/yUAJf92AHb/xgfG//8A///q"
+			"AOr/pwCn/3IAcv9G/0b/If8h/wL/Av8A/wD/AP8A/wD/AP8A/wD/AP8A/wC2AP8AZA=="
 		)
 	)
 	(image
@@ -23712,6 +23860,42 @@
 			"mzf0OgA8RjObN/Q6ADxlMks2njlsOoguiC6ILoguiC6ILoguiC6ILoguiC6ILoguiC6ILoguiC6I"
 			"LoguiC6ILoguiC6ILoguiC6ILoguiC6ILoguiC6ILoguiC6ILoguiC6ILoguiC6ILoguiC6ILogu"
 			"iC6ILoguiC6ILoguiC6ILoguiC6ILoguiC6ILgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
@@ -29309,7 +29493,43 @@
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAA=="
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAaAAAADAAAABBAAAAawAAAEoAAABDAAAAUQAAAGcAAABCAAAA"
+			"MAAAADcAAABkAAAAdQAAAEMAAABsAAAAbAAAADEAAAA1AAAAQwAAAFkAAABHAAAAQwAAAGcAAABU"
+			"AAAAdQAAAEwAAABLAAAAWgAAAFcAAABaAAAAbQAAAFkAAABzAAAAZQAAAE8AAABIAAAAYwAAAGoA"
+			"AABLAAAAeQAAAGwAAABMAAAAcgAAAGYAAABWAAAAVQAAAG4AAAA3AAAAdgAAAEgAAABqAAAAeAAA"
+			"ADcAAABGAAAAdgAAADMAAAB6AAAANQAAAFkAAABXAAAARgAAAGoAAABBAAAAeAAAADgAAABjAAAA"
+			"SAAAAGUAAABYAAAAbAAAADUAAABPAAAAUAAAAEcAAABzAAAAMQAAAE8AAABEAAAAbgAAAG4AAAAz"
+			"AAAAKwAAAHUAAABkAAAAaAAAACsAAABrAAAAVQAAAGkAAABuAAAAKwAAAC8AAABlAAAAOQAAAC8A"
+			"AABJAAAAeQAAAHMAAAByAAAAQwAAAC8AAAAvAAAAOQAAADcAAAAzAAAALwAAAHIAAABMAAAAZAAA"
+			"ACsAAAA4AAAAZQAAAFQAAABNAAAAdQAAAFgAAAByAAAAdwAAAEkAAABEAAAAdwAAADgAAABQAAAA"
+			"dQAAAEwAAABtAAAANQAAAEkAAABUAAAATQAAAHoAAABFAAAAdwAAAGMAAABPAAAASAAAAEUAAABC"
+			"AAAAQgAAAFEAAABZAAAASAAAAE8AAAA0AAAANgAAAGEAAABrAAAAcAAAAEsAAABCAAAAUAAAAG4A"
+			"AAB6AAAANwAAAHcAAAA4AAAAZgAAAEgAAABCAAAAdgAAAFgAAAB2AAAAMwAAAEUAAABCAAAAOAAA"
+			"AGYAAABqAAAANgAAAEsAAABpAAAASQAAAHEAAAB4AAAAZgAAAHYAAAA3AAAANwAAAGUAAAA1AAAA"
+			"MAAAAHMAAABiAAAAYwAAAFIAAAA4AAAALwAAAGYAAABxAAAAeAAAADAAAAB1AAAANgAAAEsAAABp"
+			"AAAASQAAAG8AAAAzAAAAZQAAADYAAAA2AAAAYgAAADIAAABWAAAAeQAAAHEAAABWAAAASQAAAGkA"
+			"AABRAAAAawAAAEIAAABKAAAAYwAAAHYAAABYAAAANAAAAGEAAAB4AAAAcwAAAFQAAABFAAAAOAAA"
+			"AFAAAABUAAAAMQAAAGgAAABhAAAAbQAAAHEAAABxAAAAawAAAEgAAABEAAAAVwAAAFIAAABWAAAA"
+			"dwAAAHUAAAA1AAAAegAAAFoAAAB0AAAAeAAAAHEAAAAzAAAAcgAAADkAAAB1AAAAMwAAAGIAAAAy"
+			"AAAATAAAADEAAAA3AAAATgAAAA=="
 		)
 	)
 	(global_label "GND"
@@ -29356,6 +29576,28 @@
 			)
 		)
 	)
+	(global_label "3V3"
+		(shape input)
+		(at 207.01 186.69 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "060373a3-93aa-45c6-964e-bf9cedf241a4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 200.4221 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "LORA_RF_SWITCH"
 		(shape input)
 		(at 59.69 280.67 180)
@@ -29374,6 +29616,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "3V3_RP"
+		(shape input)
+		(at 434.34 63.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0dfd5488-d883-48f3-9ef8-21541d6ddff9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 444.4355 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -29446,7 +29710,7 @@
 	)
 	(global_label "LORA_BUSY"
 		(shape input)
-		(at 270.51 332.74 0)
+		(at 270.51 314.96 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -29456,7 +29720,7 @@
 		)
 		(uuid "1e67c92f-baaa-4d3c-a06d-170a1693974d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 284.1737 332.74 0)
+			(at 284.1737 314.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29466,7 +29730,7 @@
 			)
 		)
 	)
-	(global_label "3V3"
+	(global_label "3V3_RP"
 		(shape input)
 		(at 209.55 257.81 180)
 		(fields_autoplaced yes)
@@ -29478,7 +29742,7 @@
 		)
 		(uuid "2066e533-0297-4342-a006-4a8e70742954")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 202.9621 257.81 0)
+			(at 199.4545 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29512,7 +29776,7 @@
 	)
 	(global_label "LORA_MISO"
 		(shape input)
-		(at 270.51 317.5 0)
+		(at 270.51 330.2 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -29522,7 +29786,7 @@
 		)
 		(uuid "26f6bcb8-67ae-4363-a5a3-ae6ec2d9dd9d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 283.8713 317.5 0)
+			(at 283.8713 330.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29598,7 +29862,7 @@
 			)
 		)
 	)
-	(global_label "3V3"
+	(global_label "3V3_RP"
 		(shape input)
 		(at 162.56 278.13 180)
 		(fields_autoplaced yes)
@@ -29610,7 +29874,7 @@
 		)
 		(uuid "31d5850f-8473-45d1-8609-7d97248abbca")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 155.9721 278.13 0)
+			(at 152.4645 278.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29642,6 +29906,28 @@
 			)
 		)
 	)
+	(global_label "3V3_RP"
+		(shape input)
+		(at 224.79 186.69 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3fb1e845-9ea3-4843-b300-9fc45ba0c434")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 234.8855 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "DATA8"
 		(shape input)
 		(at 406.4 175.26 0)
@@ -29664,7 +29950,7 @@
 			)
 		)
 	)
-	(global_label "3V3"
+	(global_label "3V3_RP"
 		(shape input)
 		(at 59.69 298.45 180)
 		(fields_autoplaced yes)
@@ -29676,7 +29962,7 @@
 		)
 		(uuid "415d545a-ba8b-458c-8254-f9d2b68b3cf4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 53.1021 298.45 0)
+			(at 49.5945 298.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29930,7 +30216,7 @@
 	)
 	(global_label "LORA_RF_SWITCH"
 		(shape input)
-		(at 270.51 314.96 0)
+		(at 270.51 332.74 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -29940,12 +30226,34 @@
 		)
 		(uuid "519077f6-baf8-4d7e-8372-3a189524bf6e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 289.4351 314.96 0)
+			(at 289.4351 332.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "3V3_RP"
+		(shape input)
+		(at 318.77 35.56 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "543d24bb-9611-4f7e-8bba-7f7219dea7a5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 308.6745 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -30082,28 +30390,6 @@
 			)
 		)
 	)
-	(global_label "3V3"
-		(shape input)
-		(at 318.77 35.56 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5f7ff615-2d88-4f18-8c0f-dd523df69a15")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 312.1821 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "GND"
 		(shape input)
 		(at 92.71 285.75 0)
@@ -30214,28 +30500,6 @@
 			)
 		)
 	)
-	(global_label "3V3"
-		(shape input)
-		(at 434.34 63.5 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "6ce22537-5af3-4702-a539-68bf7524b4cc")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 440.9279 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "LORA_SCK"
 		(shape input)
 		(at 59.69 288.29 180)
@@ -30302,7 +30566,7 @@
 			)
 		)
 	)
-	(global_label "3V3"
+	(global_label "3V3_RP"
 		(shape input)
 		(at 341.63 175.26 180)
 		(fields_autoplaced yes)
@@ -30314,7 +30578,7 @@
 		)
 		(uuid "7569f3a8-ce7e-407f-855f-c78e13e8f932")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 335.0421 175.26 0)
+			(at 331.5345 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30392,7 +30656,7 @@
 	)
 	(global_label "VBAT"
 		(shape input)
-		(at 308.61 85.09 180)
+		(at 292.1 85.09 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -30402,7 +30666,7 @@
 		)
 		(uuid "7e5cb82c-10e9-4e38-b386-4ef34534a6cd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 301.1149 85.09 0)
+			(at 284.6049 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30447,28 +30711,6 @@
 		(uuid "87ddfe6c-27dd-4705-a847-4e76d5b595ea")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 335.0421 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "3V3"
-		(shape input)
-		(at 318.77 58.42 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "882db462-ec03-4402-8aa1-83ea2d9b68f8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 312.1821 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30744,7 +30986,7 @@
 	)
 	(global_label "LORA_NSS"
 		(shape input)
-		(at 270.51 327.66 0)
+		(at 270.51 320.04 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -30754,7 +30996,7 @@
 		)
 		(uuid "a19bc38d-04e6-40cc-af54-9025e0329e23")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 283.0246 327.66 0)
+			(at 283.0246 320.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30918,6 +31160,28 @@
 			)
 		)
 	)
+	(global_label "3V3_RP"
+		(shape input)
+		(at 318.77 58.42 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c35774bf-3820-4eec-9aba-e76a2087a25f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 308.6745 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "LORA_BUSY"
 		(shape input)
 		(at 92.71 283.21 0)
@@ -30940,7 +31204,7 @@
 			)
 		)
 	)
-	(global_label "3V3"
+	(global_label "3V3_RP"
 		(shape input)
 		(at 269.24 257.81 0)
 		(fields_autoplaced yes)
@@ -30952,7 +31216,7 @@
 		)
 		(uuid "c726486b-7de6-4611-b90b-b9515628b030")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 275.8279 257.81 0)
+			(at 279.3355 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31052,7 +31316,7 @@
 	)
 	(global_label "LORA_DIO1"
 		(shape input)
-		(at 270.51 330.2 0)
+		(at 270.51 317.5 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -31062,7 +31326,7 @@
 		)
 		(uuid "d2a5dd21-6161-436b-9c2d-284327e389a7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 283.6899 330.2 0)
+			(at 283.6899 317.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31294,7 +31558,7 @@
 	)
 	(global_label "LORA_NRST"
 		(shape input)
-		(at 270.51 325.12 0)
+		(at 270.51 322.58 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -31304,7 +31568,7 @@
 		)
 		(uuid "f0862a1b-fe62-40a3-9efb-8096e613c833")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 284.0527 325.12 0)
+			(at 284.0527 322.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31316,7 +31580,7 @@
 	)
 	(global_label "LORA_MOSI"
 		(shape input)
-		(at 270.51 320.04 0)
+		(at 270.51 327.66 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -31326,7 +31590,7 @@
 		)
 		(uuid "f224b942-6adb-4047-8695-07c8455d5750")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 283.8713 320.04 0)
+			(at 283.8713 327.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31404,7 +31668,7 @@
 	)
 	(global_label "LORA_SCK"
 		(shape input)
-		(at 270.51 322.58 0)
+		(at 270.51 325.12 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -31414,7 +31678,7 @@
 		)
 		(uuid "fe02230b-622e-4364-89e1-196426be23b0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 283.0246 322.58 0)
+			(at 283.0246 325.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31619,6 +31883,76 @@
 			(project ""
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Socket")
+		(at 306.07 223.52 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "177be743-7d94-413a-bf6f-309b6e69abcc")
+		(property "Reference" "J6"
+			(at 307.34 221.6149 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02_Socket"
+			(at 307.34 224.1549 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 306.07 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 306.07 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 306.07 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "69a90d2e-6e4f-47bd-8135-173e349ce72c")
+		)
+		(pin "1"
+			(uuid "f0f51276-5dfe-4640-b293-8da283485e90")
+		)
+		(instances
+			(project "sunspotv1"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -32174,7 +32508,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_Elec_6.3x7.7"
 			(at 103.8352 68.58 0)
 			(effects
 				(font
@@ -32564,6 +32898,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x02_Socket")
+		(at 320.04 233.68 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6e2b0c7f-6b30-4eea-a724-a6d33b0ffae5")
+		(property "Reference" "J5"
+			(at 321.31 231.7749 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02_Socket"
+			(at 321.31 234.3149 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 320.04 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 320.04 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 320.04 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7ae335ca-3b3c-43c8-aab4-c326a7f8addd")
+		)
+		(pin "1"
+			(uuid "b05771a9-81ac-418a-9fc2-5257abd6f51e")
+		)
+		(instances
+			(project "sunspotv1"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "MCU_RaspberryPi:RP2040")
 		(at 245.11 307.34 0)
 		(unit 1)
@@ -32825,7 +33229,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_Elec_6.3x7.7"
 			(at 385.7752 71.12 0)
 			(effects
 				(font
@@ -33035,7 +33439,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "andycustomfeet2:915MHz_ANT_DIPOLE"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
 			(at 107.95 283.21 0)
 			(effects
 				(font
@@ -33432,16 +33836,16 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Socket")
-		(at 44.45 38.1 180)
+		(at 44.45 35.56 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8bc90860-e3fe-4c0f-b9d7-4db18b2c75fe")
 		(property "Reference" "J9"
-			(at 45.085 30.48 0)
+			(at 45.085 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33449,15 +33853,15 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Socket"
-			(at 45.085 33.02 0)
+			(at 45.085 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 44.45 38.1 0)
+		(property "Footprint" "andycustomfeet2:C60_quarter_thruboardholes"
+			(at 44.45 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33466,7 +33870,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 44.45 38.1 0)
+			(at 44.45 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33475,7 +33879,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 44.45 38.1 0)
+			(at 44.45 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33631,6 +34035,76 @@
 			(project "sunspotv1"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Socket")
+		(at 302.26 90.17 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a271b7b2-d45b-4e80-8580-a654efb77e0e")
+		(property "Reference" "J2"
+			(at 303.53 88.2649 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02_Socket"
+			(at 303.53 90.8049 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 302.26 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 302.26 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 302.26 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2a6b0e04-ee4c-4a92-94ab-398649d03399")
+		)
+		(pin "1"
+			(uuid "1480f8ee-9443-43fa-a8d5-a6180cf76e90")
+		)
+		(instances
+			(project ""
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -34349,6 +34823,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x02_Socket")
+		(at 217.17 191.77 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "da18e6d8-010e-4d6d-9345-30d544cde2ed")
+		(property "Reference" "J4"
+			(at 218.44 189.8649 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02_Socket"
+			(at 218.44 192.4049 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 217.17 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 217.17 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 217.17 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "578e7958-7497-4135-9d59-10ebdba9464b")
+		)
+		(pin "1"
+			(uuid "446d7fa5-69dc-4e2e-8183-1b00eb175a6d")
+		)
+		(instances
+			(project "sunspotv1"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 242.57 241.3 0)
 		(unit 1)
@@ -34523,7 +35067,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_Elec_6.3x7.7"
 			(at 223.2152 40.64 0)
 			(effects
 				(font
@@ -34669,7 +35213,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_Elec_6.3x7.7"
 			(at 113.9952 68.58 0)
 			(effects
 				(font
@@ -34737,7 +35281,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal"
 			(at 44.45 67.31 0)
 			(effects
 				(font
