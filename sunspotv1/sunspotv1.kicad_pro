@@ -49,7 +49,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.35
+          "min_clearance": 0.25
         }
       },
       "diff_pair_dimensions": [
@@ -144,7 +144,7 @@
         "min_track_width": 0.1,
         "min_via_annular_width": 0.05,
         "min_via_diameter": 0.4,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -193,6 +193,7 @@
       ],
       "track_widths": [
         0.0,
+        0.15,
         0.2,
         0.4,
         0.5,
