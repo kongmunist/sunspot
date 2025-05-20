@@ -2,12 +2,13 @@
 
 Sunspot is a sticker-based camera system that uses LoRa technology to transmit images to the web, powered entirely by solar energy. The system operates without the need for battery charging, making it a truly autonomous monitoring solution.
 
+![image](images/sunspot.jpg)
+
 ## Key Features
 
-- **Solar-Powered Operation**: Runs entirely on harvested solar energy
+- **Zero Maintenance**: Charges itself entirely on harvested solar energy
 - **LoRa Connectivity**: Long-range, low-power wireless communication
 - **Sticker Form Factor**: Ultra-thin, flexible design for easy deployment
-- **Zero Maintenance**: No battery charging required
 - **Web Integration**: Images automatically uploaded to web dashboard
 
 ## Applications
