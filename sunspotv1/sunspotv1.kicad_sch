@@ -31268,7 +31268,7 @@
 			)
 		)
 	)
-	(global_label "DATA9"
+	(global_label "DATA7"
 		(shape input)
 		(at 270.51 292.1 0)
 		(fields_autoplaced yes)
@@ -31312,7 +31312,7 @@
 			)
 		)
 	)
-	(global_label "DATA4"
+	(global_label "DATA2"
 		(shape input)
 		(at 381 238.76 0)
 		(fields_autoplaced yes)
@@ -31422,7 +31422,7 @@
 			)
 		)
 	)
-	(global_label "DATA3"
+	(global_label "DATA1"
 		(shape input)
 		(at 381 236.22 0)
 		(fields_autoplaced yes)
@@ -31466,7 +31466,7 @@
 			)
 		)
 	)
-	(global_label "DATA5"
+	(global_label "DATA3"
 		(shape input)
 		(at 381 233.68 0)
 		(fields_autoplaced yes)
@@ -31510,7 +31510,7 @@
 			)
 		)
 	)
-	(global_label "DATA6"
+	(global_label "DATA4"
 		(shape input)
 		(at 381 228.6 0)
 		(fields_autoplaced yes)
@@ -31554,7 +31554,7 @@
 			)
 		)
 	)
-	(global_label "DATA8"
+	(global_label "DATA6"
 		(shape input)
 		(at 381 218.44 0)
 		(fields_autoplaced yes)
@@ -31884,7 +31884,7 @@
 			)
 		)
 	)
-	(global_label "DATA2"
+	(global_label "DATA0"
 		(shape input)
 		(at 381 231.14 0)
 		(fields_autoplaced yes)
@@ -32038,7 +32038,7 @@
 			)
 		)
 	)
-	(global_label "DATA2"
+	(global_label "DATA0"
 		(shape input)
 		(at 270.51 276.86 0)
 		(fields_autoplaced yes)
@@ -32214,7 +32214,7 @@
 			)
 		)
 	)
-	(global_label "DATA4"
+	(global_label "DATA2"
 		(shape input)
 		(at 270.51 269.24 0)
 		(fields_autoplaced yes)
@@ -32324,7 +32324,7 @@
 			)
 		)
 	)
-	(global_label "DATA7"
+	(global_label "DATA5"
 		(shape input)
 		(at 381 223.52 0)
 		(fields_autoplaced yes)
@@ -32412,7 +32412,7 @@
 			)
 		)
 	)
-	(global_label "DATA9"
+	(global_label "DATA7"
 		(shape input)
 		(at 316.23 215.9 180)
 		(fields_autoplaced yes)
@@ -32566,7 +32566,7 @@
 			)
 		)
 	)
-	(global_label "DATA7"
+	(global_label "DATA5"
 		(shape input)
 		(at 270.51 284.48 0)
 		(fields_autoplaced yes)
@@ -32720,7 +32720,7 @@
 			)
 		)
 	)
-	(global_label "DATA3"
+	(global_label "DATA1"
 		(shape input)
 		(at 270.51 271.78 0)
 		(fields_autoplaced yes)
@@ -32764,7 +32764,7 @@
 			)
 		)
 	)
-	(global_label "DATA5"
+	(global_label "DATA3"
 		(shape input)
 		(at 270.51 274.32 0)
 		(fields_autoplaced yes)
@@ -33094,7 +33094,7 @@
 			)
 		)
 	)
-	(global_label "DATA6"
+	(global_label "DATA4"
 		(shape input)
 		(at 270.51 279.4 0)
 		(fields_autoplaced yes)
@@ -33402,7 +33402,7 @@
 			)
 		)
 	)
-	(global_label "DATA8"
+	(global_label "DATA6"
 		(shape input)
 		(at 270.51 287.02 0)
 		(fields_autoplaced yes)

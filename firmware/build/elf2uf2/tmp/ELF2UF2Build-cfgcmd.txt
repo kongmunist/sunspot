@@ -1,0 +1,1 @@
+cmd='/opt/local/bin/cmake;-GUnix Makefiles;<SOURCE_DIR><SOURCE_SUBDIR>'

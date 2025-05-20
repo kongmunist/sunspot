@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "pico_sdk/src/rp2040/hardware_regs",
+		"source" : "pico-sdk/src/rp2040/hardware_regs"
+	}
+}
