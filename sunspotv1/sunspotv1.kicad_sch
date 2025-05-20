@@ -5168,6 +5168,16 @@
 		)
 		(uuid "925e100a-c897-4659-a767-9df2485fb200")
 	)
+	(text "USB 5V goes to 3V3_IN via jumper (goes to regulator) then becomes 3V\nwhich gets conneted to 3V3_RP via another jumper"
+		(exclude_from_sim no)
+		(at 92.71 309.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "99ea697d-97ec-4de6-80c0-04e606e57283")
+	)
 	(text "Formula is (Rtop/Rbot + 1)*1.25, target is 4.2V\nIf we use 120k and 51k, we get 4.19V, this uses E24\nif we use 160 and 68k, we get 4.19V"
 		(exclude_from_sim no)
 		(at 262.89 74.93 0)
@@ -5489,6 +5499,12 @@
 		(uuid "e62add66-15da-4272-b3f4-29dc17ad2229")
 	)
 	(junction
+		(at 187.96 175.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e7b1d18a-b784-4bf2-8c50-b87b6c8d8472")
+	)
+	(junction
 		(at 102.87 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5780,6 +5796,16 @@
 	)
 	(wire
 		(pts
+			(xy 181.61 204.47) (xy 187.96 204.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b36dd37-be55-47c2-a8bc-42d9bd57117e")
+	)
+	(wire
+		(pts
 			(xy 381 226.06) (xy 360.68 226.06)
 		)
 		(stroke
@@ -5877,6 +5903,16 @@
 			(type default)
 		)
 		(uuid "23e2cd47-997e-4cc1-a664-3dcbf6202ffd")
+	)
+	(wire
+		(pts
+			(xy 187.96 175.26) (xy 187.96 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24cb2f59-51db-414f-9ca5-9cb2c2b567f8")
 	)
 	(wire
 		(pts
@@ -6510,6 +6546,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 204.47) (xy 187.96 200.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7022d36e-1b6b-4cc0-8d12-54e514d76a80")
+	)
+	(wire
+		(pts
 			(xy 318.77 58.42) (xy 330.2 58.42)
 		)
 		(stroke
@@ -6720,6 +6766,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 175.26) (xy 194.31 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "850f19e0-0bae-43ca-ba00-4285f41dfbd6")
+	)
+	(wire
+		(pts
 			(xy 99.06 358.14) (xy 99.06 341.63)
 		)
 		(stroke
@@ -6740,7 +6796,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 186.69) (xy 224.79 186.69)
+			(xy 162.56 175.26) (xy 187.96 175.26)
 		)
 		(stroke
 			(width 0)
@@ -6870,7 +6926,7 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 186.69) (xy 214.63 186.69)
+			(xy 152.4 175.26) (xy 160.02 175.26)
 		)
 		(stroke
 			(width 0)
@@ -7257,6 +7313,16 @@
 			(type default)
 		)
 		(uuid "ba22981d-533f-4258-99bf-de49c9f49462")
+	)
+	(wire
+		(pts
+			(xy 187.96 186.69) (xy 187.96 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb040d58-c939-46c7-8fc8-31144f4df0bb")
 	)
 	(wire
 		(pts
@@ -12514,7 +12580,25 @@
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AA=="
+			"ABEIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZ"
+			"EQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkR"
+			"CBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREI"
+			"GhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQga"
+			"GREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZ"
+			"EQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkR"
+			"CBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREI"
+			"GhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQga"
+			"GREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZ"
+			"EQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkR"
+			"CBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREI"
+			"GhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQga"
+			"GREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZ"
+			"EQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkR"
+			"CBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREI"
+			"GhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQga"
+			"GREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZ"
+			"EQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkRCBoZEQgaGREIGhkR"
+			"CA=="
 		)
 	)
 	(image
@@ -14064,7 +14148,25 @@
 			"RQAAADcAAABlAAAATAAAAFIAAABJAAAASwAAAGgAAABTAAAANwAAAEwAAABSAAAAUgAAADgAAABS"
 			"AAAARQAAAFoAAABHAAAAUgAAAGwAAABFAAAAdwAAAG0AAABPAAAAWAAAAHoAAAA0AAAATQAAAEcA"
 			"AAB2AAAAWAAAAHIAAAB1AAAAWAAAADUAAAA1AAAANQAAADkAAABuAAAAeAAAADQAAAA0AAAAZAAA"
-			"AHQAAABMAAAAVwAAADEAAAA0AAAAZgAAAFYAAAA2AAAAbQ=="
+			"AHQAAABMAAAAVwAAADEAAAA0AAAAZgAAAFYAAAA2AAAAbQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
 		)
 	)
 	(image
@@ -23080,6 +23182,24 @@
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
 		)
 	)
@@ -25217,7 +25337,25 @@
 			"AEkAAABDAAAAYwAAADMAAABOAAAAegAAAEoAAABKAAAATgAAAEoAAABDAAAAUgAAAFMAAABLAAAA"
 			"OQAAADkAAABKAAAAZwAAAEEAAABCAAAAcwAAAGIAAABtAAAAbgAAAC8AAAA1AAAAbAAAADQAAABC"
 			"AAAANAAAAFgAAABIAAAASAAAAGwAAABpAAAAawAAAE0AAABzAAAAWgAAAGcAAABjAAAAMAAAAGoA"
-			"AAA0AAAANAAAAE0AAAB2AAAALwAAAHQAAABkAA=="
+			"AAA0AAAANAAAAE0AAAB2AAAALwAAAHQAAABkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
 		)
 	)
 	(image
@@ -30977,7 +31115,25 @@
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAA=="
+			"AAAAAAAAAAAAAAAAAAAAAAAAAP//////////////////////////////////////////////////"
+			"////////////////////////////////////////////////////////////////////////////"
+			"////////////////////////////////////////////////////////////////////////////"
+			"////////////////////////////////////////////////////////////////////////////"
+			"////////////////////////////////////////////////////////////////////////////"
+			"////////////////////////////////////////////////////////////////////////////"
+			"////////////////////////////////////////////////////////////////////////////"
+			"/////////////////////////////////////0BAQP8AAAD/AAAA/wAAAP+/v7//////////////"
+			"////////////////////////////////////////////////////////////////////////////"
+			"////////////////////////////////////////////////////////////////////////////"
+			"////////////////////////////////////////////v7+//wAAAP8AAAD/AAAA/0BAQP//////"
+			"////////////////////////////////////////////////////////////////////////////"
+			"////////////////////////////////////////////////////////////////////////////"
+			"////////////////////////////////////////v7+//wAAAP8AAAD/AAAA/0BAQP9AQED/////"
+			"////////////////////////////////////////////////////////////////////////////"
+			"////////////////////////////////////////////////////////////////////////////"
+			"////////////////////////////////////v7+//7+/v/8AAAD/AAAA/0BAQP9AQED/////////"
+			"////////////////////////////////////////////////////////////////////////////"
+			"////////////2NjY/9jY2P/Lyw=="
 		)
 	)
 	(global_label "GND"
@@ -31026,7 +31182,7 @@
 	)
 	(global_label "3V3"
 		(shape input)
-		(at 207.01 186.69 180)
+		(at 152.4 175.26 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -31036,7 +31192,7 @@
 		)
 		(uuid "060373a3-93aa-45c6-964e-bf9cedf241a4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 200.4221 186.69 0)
+			(at 145.8121 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31130,6 +31286,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 181.61 204.47 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "15be9f3f-039e-4a6b-93b2-c2bfa635d725")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 174.6592 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -31356,7 +31534,7 @@
 	)
 	(global_label "3V3_RP"
 		(shape input)
-		(at 224.79 186.69 0)
+		(at 194.31 175.26 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -31366,7 +31544,7 @@
 		)
 		(uuid "3fb1e845-9ea3-4843-b300-9fc45ba0c434")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 234.8855 186.69 0)
+			(at 204.4055 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34046,6 +34224,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 187.96 196.85 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "40bbab8f-9ade-4f2e-ab4f-eb6db934400b")
+		(property "Reference" "D2"
+			(at 191.77 197.1674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 191.77 199.7074 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 187.96 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 187.96 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 187.96 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 187.96 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1ea34231-925d-4b25-86d2-b9d7c6b114cd")
+		)
+		(pin "2"
+			(uuid "ed305580-6b4c-4287-986e-7744dbbec7aa")
+		)
+		(instances
+			(project "sunspotv1"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 247.65 250.19 0)
 		(unit 1)
@@ -35649,6 +35906,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 187.96 182.88 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9b30b859-aab7-4ca4-9231-778a772679c1")
+		(property "Reference" "R11"
+			(at 190.5 181.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "51kΩ"
+			(at 190.5 184.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 189.738 182.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 187.96 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 187.96 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5c2c8c26-f2b7-4463-81a3-f757f65b56ac")
+		)
+		(pin "2"
+			(uuid "34d4b7f9-95d9-441b-a032-10bb538c0525")
+		)
+		(instances
+			(project "sunspotv1"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 427.99 92.71 0)
 		(unit 1)
@@ -36572,7 +36899,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Socket")
-		(at 217.17 191.77 270)
+		(at 162.56 180.34 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -36581,7 +36908,7 @@
 		(fields_autoplaced yes)
 		(uuid "da18e6d8-010e-4d6d-9345-30d544cde2ed")
 		(property "Reference" "J4"
-			(at 218.44 189.8649 90)
+			(at 163.83 178.4349 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36590,7 +36917,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Socket"
-			(at 218.44 192.4049 90)
+			(at 163.83 180.9749 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36599,7 +36926,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 217.17 191.77 0)
+			(at 162.56 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36608,7 +36935,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 217.17 191.77 0)
+			(at 162.56 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36617,7 +36944,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 217.17 191.77 0)
+			(at 162.56 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
