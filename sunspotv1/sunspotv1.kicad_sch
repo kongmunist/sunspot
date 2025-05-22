@@ -6010,6 +6010,16 @@
 	)
 	(wire
 		(pts
+			(xy 299.72 320.04) (xy 299.72 323.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "040b0514-5315-424e-89cf-6c0f6ae4845e")
+	)
+	(wire
+		(pts
 			(xy 232.41 257.81) (xy 240.03 257.81)
 		)
 		(stroke
@@ -6380,6 +6390,16 @@
 	)
 	(wire
 		(pts
+			(xy 304.8 337.82) (xy 299.72 337.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29919968-e738-4854-9b1d-63b2f9c64e59")
+	)
+	(wire
+		(pts
 			(xy 201.93 269.24) (xy 207.01 269.24)
 		)
 		(stroke
@@ -6477,6 +6497,16 @@
 			(type default)
 		)
 		(uuid "3774bc0e-71d4-4ed7-882d-4df7c0697a24")
+	)
+	(wire
+		(pts
+			(xy 299.72 337.82) (xy 299.72 331.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c2db95d-9394-4fce-af1b-e9a4bc2bc2ff")
 	)
 	(wire
 		(pts
@@ -6757,6 +6787,16 @@
 			(type default)
 		)
 		(uuid "58c1c035-cf32-428a-a75e-a9e52e7dfd95")
+	)
+	(wire
+		(pts
+			(xy 270.51 309.88) (xy 299.72 309.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b1bcd41-e0e6-4b3d-89bd-9d773215ccb8")
 	)
 	(wire
 		(pts
@@ -8047,6 +8087,16 @@
 			(type default)
 		)
 		(uuid "e05219f8-ce37-45e2-b08d-5699332af7c5")
+	)
+	(wire
+		(pts
+			(xy 299.72 309.88) (xy 299.72 312.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e072b9f6-263e-497d-a0a0-cf9a92d36de3")
 	)
 	(wire
 		(pts
@@ -25895,7 +25945,7 @@
 		)
 	)
 	(image
-		(at 337.82 303.53)
+		(at 349.25 303.53)
 		(scale 0.26355)
 		(uuid "f3f530a0-46da-4f7a-9761-35dd71d974d3")
 		(data "iVBORw0KGgoAAAANSUhEUgAABfIAAAViCAYAAABJYQ0CAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz"
@@ -32636,6 +32686,28 @@
 			)
 		)
 	)
+	(global_label "GND"
+		(shape input)
+		(at 304.8 337.82 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "747c40a8-10aa-4447-a7b6-eb7592e2868e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 311.7508 337.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "PCLK"
 		(shape input)
 		(at 270.51 289.56 0)
@@ -37709,6 +37781,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 299.72 316.23 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f3d7b9d3-8129-41ed-8836-3718d0b844aa")
+		(property "Reference" "R12"
+			(at 302.26 314.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "51kΩ"
+			(at 302.26 317.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 301.498 316.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 299.72 316.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 299.72 316.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dba61560-6f1b-4665-958a-d2250cbe3291")
+		)
+		(pin "2"
+			(uuid "639f2528-c658-4da8-be21-4f9ffb878bfd")
+		)
+		(instances
+			(project "sunspotv1"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x02_Socket")
 		(at 44.45 67.31 180)
 		(unit 1)
@@ -37771,6 +37913,85 @@
 			(project ""
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 299.72 327.66 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f6c9a659-8126-4d69-9318-126f260957d5")
+		(property "Reference" "D3"
+			(at 303.53 327.9774 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 303.53 330.5174 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 299.72 327.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 299.72 327.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 299.72 327.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 299.72 327.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dec07cba-ea40-4e6e-9ec7-2c1f6e1008fd")
+		)
+		(pin "2"
+			(uuid "ca9a8317-0f68-467e-90b1-1ea42eb1e40a")
+		)
+		(instances
+			(project "sunspotv1"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "D3")
 					(unit 1)
 				)
 			)
