@@ -11,14 +11,14 @@ const int PIN_LED = 25;
 // const int PIN_CAM_VSYNC = 16;
 // const int PIN_CAM_Y2_PIO_BASE = 6;
 
-const int PIN_CAM_SIOC = 15;   // I2C0 SCL
-const int PIN_CAM_SIOD = 14;   // I2C0 SDA
+const int PIN_CAM_SIOC = 14;   // I2C0 SCL
+const int PIN_CAM_SIOD = 15;   // I2C0 SDA
 const int PIN_CAM_RESETB = 13 ;
 const int PIN_CAM_XCLK = 8;
 const int PIN_CAM_VSYNC = 12;
 const int PIN_CAM_Y2_PIO_BASE = 0;  // DATA2 is GPIO0, and DATA0–DATA7 are non-contiguous but we'll map in software
 
- 
+
 const uint8_t CMD_REG_WRITE = 0xAA;
 const uint8_t CMD_REG_READ = 0xBB;
 const uint8_t CMD_CAPTURE = 0xCC;
@@ -47,7 +47,7 @@ int main() {
 	sleep_ms(1000);
 
     struct ov2640_config config;
-    config.sccb = i2c0;
+    config.sccb = i2c1;
     config.pin_sioc = PIN_CAM_SIOC;
     config.pin_siod = PIN_CAM_SIOD;
 
@@ -71,35 +71,35 @@ int main() {
     uint8_t midl = ov2640_reg_read(&config, 0x1D);
     printf("MIDH = 0x%02x, MIDL = 0x%02x\n", midh, midl);
 
-    // while (true) {
-    //     int cmd = getchar();  // wait for 1 byte from USB serial
+    while (true) {
+        int cmd = getchar();  // wait for 1 byte from USB serial
 
-    //     if (cmd == EOF) continue;
+        if (cmd == EOF) continue;
 
-    //     gpio_put(PIN_LED, !gpio_get(PIN_LED));
+        gpio_put(PIN_LED, !gpio_get(PIN_LED));
 
-    //     if (cmd == CMD_REG_WRITE) {
-    //         int reg = getchar();
-    //         int value = getchar();
-    //         if (reg == EOF || value == EOF) continue;
+        if (cmd == CMD_REG_WRITE) {
+            int reg = getchar();
+            int value = getchar();
+            if (reg == EOF || value == EOF) continue;
 
-    //         ov2640_reg_write(&config, (uint8_t)reg, (uint8_t)value);
+            ov2640_reg_write(&config, (uint8_t)reg, (uint8_t)value);
 
-    //     } else if (cmd == CMD_REG_READ) {
-    //         int reg = getchar();
-    //         if (reg == EOF) continue;
+        } else if (cmd == CMD_REG_READ) {
+            int reg = getchar();
+            if (reg == EOF) continue;
 
-    //         uint8_t value = ov2640_reg_read(&config, (uint8_t)reg);
-    //         putchar(value);
+            uint8_t value = ov2640_reg_read(&config, (uint8_t)reg);
+            putchar(value);
 
-    //     } else if (cmd == CMD_CAPTURE) {
-    //         ov2640_capture_frame(&config);
+        } else if (cmd == CMD_CAPTURE) {
+            ov2640_capture_frame(&config);
 
-    //         for (size_t i = 0; i < config.image_buf_size; ++i) {
-    //             putchar(config.image_buf[i]);
-    //         }
-    //     }
-    // }
+            for (size_t i = 0; i < config.image_buf_size; ++i) {
+                putchar(config.image_buf[i]);
+            }
+        }
+    }
 
     return 0;
 }
