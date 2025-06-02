@@ -20,7 +20,7 @@ pico_enable_stdio_uart(firmware 0)  # <— turn off UART if not used
 
 target_link_libraries(firmware
     pico_stdlib
-    # hardware_uart
+    hardware_uart
     hardware_pio
     hardware_dma
     hardware_i2c

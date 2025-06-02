@@ -2,7 +2,7 @@
 #include "pico/stdlib.h"
 #include "ov2640.h"
 
-// const int PIN_LED = 25;
+const int PIN_LED = 25;
 
 // const int PIN_CAM_SIOC = 5; // I2C0 SCL
 // const int PIN_CAM_SIOD = 4; // I2C0 SDA
@@ -26,19 +26,18 @@ const uint8_t CMD_CAPTURE = 0xCC;
 uint8_t image_buf[352*288*2];
 int main() {
 	stdio_init_all();
+    for (int i = 0; i < 5; ++i) {
+        printf("Hello, world!%d\n", i);
+        sleep_ms(1000);
+    }
+    printf("\n\nBooted!\n");
 
 
-	sleep_ms(1000);
-	printf("Hello, world!1\n");
-	sleep_ms(1000);
-	printf("Hello, world!2\n");
-	sleep_ms(1000);
-	printf("Hello, world!3\n");
-	sleep_ms(1000);
-	printf("Hello, world!4\n");
-	sleep_ms(1000);
-	printf("Hello, world!5\n");
-    printf("Booted!\n");
+
+
+
+
+
 
 	gpio_init(26);
 	gpio_set_dir(26, GPIO_OUT);
@@ -46,6 +45,10 @@ int main() {
 	
 	sleep_ms(1000);
 
+
+
+
+    
     struct ov2640_config config;
     config.sccb = i2c1;
     config.pin_sioc = PIN_CAM_SIOC;
@@ -72,18 +75,10 @@ int main() {
     printf("MIDH = 0x%02x, MIDL = 0x%02x\n", midh, midl);
 
 
-    // Reading register
-    sleep_ms(1000);
-    printf("reading register...\n");
-    int reg = 0x1C;
-    uint8_t value = ov2640_reg_read(&config, (uint8_t)reg);
-    printf("reg = 0x%02x, value = 0x%02x\n", reg, value);
 
+    // sleep_ms(1000);
 
-    // Reading camera frame
-    sleep_ms(1000);
-
-    // printf("capturing frame OV2640\n");
+    printf("capturing frame OV2640\n");
     ov2640_capture_frame(&config);
     // config.image_buf_size
     printf("frame got! size = %d\n", config.image_buf_size);
