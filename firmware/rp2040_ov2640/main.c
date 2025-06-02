@@ -27,7 +27,7 @@ uint8_t image_buf[352*288*2];
 int main() {
 	stdio_init_all();
 
-    for (int i = 0; i < 5; ++i) {
+    for (int i = 0; i < 2; ++i) {
         printf("Hello, world!%d\n", i);
         sleep_ms(1000);
     }
@@ -37,7 +37,7 @@ int main() {
 	gpio_set_dir(26, GPIO_OUT);
 	gpio_put(26, 1);  // set GPIO26 HIGH
 	
-	sleep_ms(1000);
+	sleep_ms(10);
 
     struct ov2640_config config;
     config.sccb = i2c1;
@@ -66,56 +66,59 @@ int main() {
 
 
     // Reading register
-    sleep_ms(1000);
-    printf("reading register...\n");
-    int reg = 0x1C;
-    uint8_t value = ov2640_reg_read(&config, (uint8_t)reg);
-    printf("reg = 0x%02x, value = 0x%02x\n", reg, value);
+    // sleep_ms(1000);
+    // printf("reading register...\n");
+    // int reg = 0x1C;
+    // uint8_t value = ov2640_reg_read(&config, (uint8_t)reg);
+    // printf("reg = 0x%02x, value = 0x%02x\n", reg, value);
 
 
-    // Reading camera frame
-    sleep_ms(1000);
+    // // Reading camera frame
+    sleep_ms(100);
 
     // printf("capturing frame OV2640\n");
-    ov2640_capture_frame(&config);
-    // config.image_buf_size
-    printf("frame got! size = %d\n", config.image_buf_size);
+    // ov2640_capture_frame(&config);
+    // // // config.image_buf_size
+    // printf("frame got! size = %d\n", config.image_buf_size);
 
-    for (size_t i = 0; i < config.image_buf_size; ++i) {
-        putchar(config.image_buf[i]);
-    }
-
-
-
-    // while (true) {
-    //     int cmd = getchar();  // wait for 1 byte from USB serial
-
-    //     if (cmd == EOF) continue;
-
-    //     gpio_put(PIN_LED, !gpio_get(PIN_LED));
-
-    //     if (cmd == CMD_REG_WRITE) {
-    //         int reg = getchar();
-    //         int value = getchar();
-    //         if (reg == EOF || value == EOF) continue;
-
-    //         ov2640_reg_write(&config, (uint8_t)reg, (uint8_t)value);
-
-    //     } else if (cmd == CMD_REG_READ) {
-    //         int reg = getchar();
-    //         if (reg == EOF) continue;
-
-    //         uint8_t value = ov2640_reg_read(&config, (uint8_t)reg);
-    //         putchar(value);
-
-    //     } else if (cmd == CMD_CAPTURE) {
-    //         ov2640_capture_frame(&config);
-
-    //         for (size_t i = 0; i < config.image_buf_size; ++i) {
-    //             putchar(config.image_buf[i]);
-    //         }
-    //     }
+    // for (size_t i = 0; i < config.image_buf_size; ++i) {
+    //     putchar(config.image_buf[i]);
     // }
+
+
+
+    while (true) {
+        int cmd = getchar();  // wait for 1 byte from USB serial
+
+        if (cmd == EOF) continue;
+
+        // gpio_put(PIN_LED, !gpio_get(PIN_LED));
+
+        if (cmd == CMD_REG_WRITE) {
+            int reg = getchar();
+            int value = getchar();
+            if (reg == EOF || value == EOF) continue;
+
+            ov2640_reg_write(&config, (uint8_t)reg, (uint8_t)value);
+
+        } else if (cmd == CMD_REG_READ) {
+            int reg = getchar();
+            if (reg == EOF) continue;
+
+            uint8_t value = ov2640_reg_read(&config, (uint8_t)reg);
+            putchar(value);
+
+        } else if (cmd == CMD_CAPTURE) {
+            ov2640_capture_frame(&config);
+
+            for (size_t i = 0; i < config.image_buf_size; ++i) {
+                putchar(config.image_buf[i]);
+                // printf("%02x", config.image_buf[i]);
+            }
+
+            // clear serial input output buffer
+        }
+    }
 
     return 0;
 }

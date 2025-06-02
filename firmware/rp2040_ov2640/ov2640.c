@@ -67,14 +67,14 @@ void ov2640_init(struct ov2640_config *config) {
 }
 
 void ov2640_capture_frame(struct ov2640_config *config) {
-	printf("capture frame start\n");
+	// printf("capture frame start\n");
 	dma_channel_config c = dma_channel_get_default_config(config->dma_channel);
 	channel_config_set_read_increment(&c, false);
 	channel_config_set_write_increment(&c, true);
 	channel_config_set_dreq(&c, pio_get_dreq(config->pio, config->pio_sm, false));
 	channel_config_set_transfer_data_size(&c, DMA_SIZE_8);
 	
-	printf("dma_channel_configure\n");
+	// printf("dma_channel_configure\n");
 	dma_channel_configure(
 		config->dma_channel, &c,
 		config->image_buf,
@@ -83,18 +83,18 @@ void ov2640_capture_frame(struct ov2640_config *config) {
 		false
 	);
 
-	printf("wait for vsync rising edge to start frame\n");
+	// printf("wait for vsync rising edge to start frame\n");
 	// Wait for vsync rising edge to start frame
 	while (gpio_get(config->pin_vsync) == true);
-	printf("vsync low, waiting for high\n");
+	// printf("vsync low, waiting for high\n");
 	while (gpio_get(config->pin_vsync) == false);
-	printf("got vsync rising edge\n");
+	// printf("got vsync rising edge\n");
 
-	printf("dma_channel_start\n");
+	// printf("dma_channel_start\n");
 	dma_channel_start(config->dma_channel);
-	printf("dma_channel_wait_for_finish_blocking\n");
+	// printf("dma_channel_wait_for_finish_blocking\n");
 	dma_channel_wait_for_finish_blocking(config->dma_channel);
-	printf("capture frame end\n");
+	// printf("capture frame end\n");
 }
 
 void ov2640_reg_write(struct ov2640_config *config, uint8_t reg, uint8_t value) {
