@@ -11,8 +11,8 @@
 // const int PIN_CAM_VSYNC = 16;
 // const int PIN_CAM_Y2_PIO_BASE = 6;
 
-const int PIN_CAM_SIOC = 14;   // I2C0 SCL
-const int PIN_CAM_SIOD = 15;   // I2C0 SDA
+const int PIN_CAM_SIOC = 15;   // I2C0 SCL
+const int PIN_CAM_SIOD = 14;   // I2C0 SDA
 const int PIN_CAM_RESETB = 13 ;
 const int PIN_CAM_XCLK = 8;
 const int PIN_CAM_VSYNC = 12;
@@ -27,17 +27,10 @@ uint8_t image_buf[352*288*2];
 int main() {
 	stdio_init_all();
 
-
-	sleep_ms(1000);
-	printf("Hello, world!1\n");
-	sleep_ms(1000);
-	printf("Hello, world!2\n");
-	sleep_ms(1000);
-	printf("Hello, world!3\n");
-	sleep_ms(1000);
-	printf("Hello, world!4\n");
-	sleep_ms(1000);
-	printf("Hello, world!5\n");
+    for (int i = 0; i < 5; ++i) {
+        printf("Hello, world!%d\n", i);
+        sleep_ms(1000);
+    }
     printf("Booted!\n");
 
 	gpio_init(26);

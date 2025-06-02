@@ -6,6 +6,7 @@ import serial
 import serial.tools
 import struct
 import sys
+import time
 
 CMD_REG_WRITE = 0xAA
 CMD_REG_READ = 0xBB
@@ -14,7 +15,8 @@ CMD_CAPTURE = 0xCC
 # Print possible serial ports
 # print(serial.tools.list_ports.comports())
 print('before serial init')
-ser = serial.Serial(sys.argv[1], 115200, rtscts=True, dsrdtr=True)
+# ser = serial.Serial(sys.argv[1], 1000000, rtscts=True, dsrdtr=True, timeout=1)
+ser = serial.Serial(sys.argv[1], 115200, timeout=1)
 atexit.register(lambda: ser.close())
 print('after serial init')
 
@@ -54,27 +56,41 @@ def capture(filename):
     ser.write(struct.pack('B', CMD_CAPTURE)) # becomes 0xCC somehow
     
     print("starting to read")
+    now = time.time()
     # raw = ser.read(4)
-    raw = ser.read(352*288*2)
-    print(len(raw), raw)
+    rawlist = []
+    while ser.in_waiting > 0:
+        rawlist.append(ser.read(352))
+        print('len: ', len(rawlist))
+    raw = b''.join(rawlist)
+    # raw = ser.read(352*288*2)
+    print(len(raw), raw[:100])
+    print("read time", time.time() - now)
     
     print("post read")
-    img = Image.new('RGB', (352, 288))
-    width, height = img.size
+    width, height = (352, 288)
+    print("Width, height", width, height)
+    img = Image.new('RGB', (width, height))
     data = img.load()
 
     print("for loop")
     for y in range(height):
-        for x in range(width):
-            idx = y * width + x
-            v = struct.unpack('<H', raw[2*idx:2*(idx+1)])[0]
+        try:
+            for x in range(width):
+                idx = y * width + x
+                v = struct.unpack('<H', raw[2*idx:2*(idx+1)])[0]
 
-            r, g, b = v >> (5 + 6), (v >> 5) & 0b111111, v & 0b11111 
+                r, g, b = v >> (5 + 6), (v >> 5) & 0b111111, v & 0b11111 
 
-            r = math.floor(r / 0x1f * 0xff)
-            g = math.floor(g / 0x3f * 0xff)
-            b = math.floor(b / 0x1f * 0xff)
-            data[x, y] = (r, g, b)
+                r = math.floor(r / 0x1f * 0xff)
+                g = math.floor(g / 0x3f * 0xff)
+                b = math.floor(b / 0x1f * 0xff)
+                data[x, y] = (r, g, b)
+        except:
+            print("error at y", y)
+            for x in range(width):
+                data[x, y] = (0, 0, 0)
+            break
 
     img.save(filename)
 

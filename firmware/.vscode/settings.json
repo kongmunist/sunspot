@@ -1,3 +1,15 @@
 {
-    "cmake.sourceDirectory": "/Users/andykong/Library/Mobile Documents/com~apple~CloudDocs/hardware/sunspot/firmware/rp2040_ov2640"
+    "cmake.sourceDirectory": "/Users/andykong/Library/Mobile Documents/com~apple~CloudDocs/hardware/sunspot/firmware/rp2040_ov2640",
+    "files.associations": {
+        "__bit_reference": "c",
+        "__node_handle": "c",
+        "bitset": "c",
+        "deque": "c",
+        "limits": "c",
+        "locale": "c",
+        "optional": "c",
+        "ratio": "c",
+        "tuple": "c",
+        "vector": "c"
+    }
 }

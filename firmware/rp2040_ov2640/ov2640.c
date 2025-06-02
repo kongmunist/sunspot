@@ -7,6 +7,7 @@
 #include "image.pio.h"
 
 static const uint8_t OV2640_ADDR = 0x60 >> 1;
+// static const uint8_t OV2640_ADDR = 0x30;
 
 void ov2640_init(struct ov2640_config *config) {
 	printf("first line OV init\n");
@@ -26,7 +27,7 @@ void ov2640_init(struct ov2640_config *config) {
 	gpio_set_function(config->pin_siod, GPIO_FUNC_I2C);
 	gpio_pull_up(config->pin_sioc);
 	gpio_pull_up(config->pin_siod);
-	i2c_init(config->sccb, 10 * 1000);
+	i2c_init(config->sccb, 100 * 1000);
 	// uint yada = i2c_init(config->sccb, 100 * 1000);
 	// printf("i2c_init return %d\n", yada);
 	// sleep_ms(10);
@@ -98,16 +99,25 @@ void ov2640_capture_frame(struct ov2640_config *config) {
 
 void ov2640_reg_write(struct ov2640_config *config, uint8_t reg, uint8_t value) {
 	uint8_t data[] = {reg, value};
-	i2c_write_blocking(config->sccb, OV2640_ADDR, data, sizeof(data), false);
+	int ret = i2c_write_blocking(config->sccb, OV2640_ADDR, data, sizeof(data), false);
+	if (ret < 0) {
+		printf("NACK on write blocking (reg_write)\n");
+		return 0xFF;
+	}
+
 }
 
 uint8_t ov2640_reg_read(struct ov2640_config *config, uint8_t reg) {
-	i2c_write_blocking(config->sccb, OV2640_ADDR, &reg, 1, false);
+	int ret = i2c_write_blocking(config->sccb, OV2640_ADDR, &reg, 1, false);
+	if (ret < 0) {
+		printf("NACK on write blocking (reg read)\n");
+		return 0xFF;
+	}
 
 	uint8_t value;
-	int ret = i2c_read_blocking(config->sccb, OV2640_ADDR, &value, 1, false);
+	ret = i2c_read_blocking(config->sccb, OV2640_ADDR, &value, 1, false);
 	if (ret < 0) {
-		printf("NACK on write (addr phase)\n");
+		printf("NACK on read blocking (reg read)\n");
 		return 0xFF;
 	}
 
