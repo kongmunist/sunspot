@@ -71,35 +71,50 @@ int main() {
     uint8_t midl = ov2640_reg_read(&config, 0x1D);
     printf("MIDH = 0x%02x, MIDL = 0x%02x\n", midh, midl);
 
-    while (true) {
-        int cmd = getchar();  // wait for 1 byte from USB serial
 
-        if (cmd == EOF) continue;
 
-        gpio_put(PIN_LED, !gpio_get(PIN_LED));
+    // sleep_ms(1000);
 
-        if (cmd == CMD_REG_WRITE) {
-            int reg = getchar();
-            int value = getchar();
-            if (reg == EOF || value == EOF) continue;
+    // printf("capturing frame OV2640\n");
+    ov2640_capture_frame(&config);
+    // config.image_buf_size
+    printf("frame got! size = %d\n", config.image_buf_size);
 
-            ov2640_reg_write(&config, (uint8_t)reg, (uint8_t)value);
-
-        } else if (cmd == CMD_REG_READ) {
-            int reg = getchar();
-            if (reg == EOF) continue;
-
-            uint8_t value = ov2640_reg_read(&config, (uint8_t)reg);
-            putchar(value);
-
-        } else if (cmd == CMD_CAPTURE) {
-            ov2640_capture_frame(&config);
-
-            for (size_t i = 0; i < config.image_buf_size; ++i) {
-                putchar(config.image_buf[i]);
-            }
-        }
+    for (size_t i = 0; i < config.image_buf_size; ++i) {
+        putchar(config.image_buf[i]);
     }
+
+
+
+    // while (true) {
+    //     int cmd = getchar();  // wait for 1 byte from USB serial
+
+    //     if (cmd == EOF) continue;
+
+    //     gpio_put(PIN_LED, !gpio_get(PIN_LED));
+
+    //     if (cmd == CMD_REG_WRITE) {
+    //         int reg = getchar();
+    //         int value = getchar();
+    //         if (reg == EOF || value == EOF) continue;
+
+    //         ov2640_reg_write(&config, (uint8_t)reg, (uint8_t)value);
+
+    //     } else if (cmd == CMD_REG_READ) {
+    //         int reg = getchar();
+    //         if (reg == EOF) continue;
+
+    //         uint8_t value = ov2640_reg_read(&config, (uint8_t)reg);
+    //         putchar(value);
+
+    //     } else if (cmd == CMD_CAPTURE) {
+    //         ov2640_capture_frame(&config);
+
+    //         for (size_t i = 0; i < config.image_buf_size; ++i) {
+    //             putchar(config.image_buf[i]);
+    //         }
+    //     }
+    // }
 
     return 0;
 }

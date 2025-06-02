@@ -14,7 +14,7 @@ CMD_CAPTURE = 0xCC
 # Print possible serial ports
 # print(serial.tools.list_ports.comports())
 print('before serial init')
-ser = serial.Serial(sys.argv[1], 115200, rtscts=True, dsrdtr=True, timeout=1)
+ser = serial.Serial(sys.argv[1], 115200, rtscts=True, dsrdtr=True)
 atexit.register(lambda: ser.close())
 print('after serial init')
 
@@ -54,8 +54,9 @@ def capture(filename):
     ser.write(struct.pack('B', CMD_CAPTURE)) # becomes 0xCC somehow
     
     print("starting to read")
-    raw = ser.read(3)
-    # raw = ser.read(352*288*2)
+    # raw = ser.read(4)
+    raw = ser.read(352*288*2)
+    print(len(raw), raw)
     
     print("post read")
     img = Image.new('RGB', (352, 288))
